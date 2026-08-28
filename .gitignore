@@ -1,0 +1,30 @@
+# Model weights - too large / private for git, transfer separately
+models/*.pt
+models/*.hef
+# Runtime output - regenerated on each run, don't commit
+exports/*.csv
+exports/*.xlsx
+screenshots/*.jpg
+screenshots/*.png
+uploads/*
+# Keep the folders themselves in git
+!exports/.gitkeep
+!screenshots/.gitkeep
+!uploads/.gitkeep
+!models/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# QA run history - regenerable, not the disproof evidence (qa_reruns/ stays tracked, not touched here)
+qa_results/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+passageway1-c0.avi
+terrace1-c0.avi

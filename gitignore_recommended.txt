@@ -1,0 +1,35 @@
+# --- Python ---
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# --- Model weights (too large / regenerable) ---
+# Keep the folder structure via .gitkeep, ignore the actual weights.
+models/*
+!models/.gitkeep
+# NOTE: models/best.pt is 72MB — do not commit even with the pattern above
+# removed. Use Git LFS or document a fetch location in README instead.
+
+# --- Uploaded/test video content ---
+# Keep the folder via .gitkeep, ignore actual video files (test_1.mp4,
+# landscape_test_1.mp4, landscape_test_2.mp4, etc. stay local only).
+uploads/*
+!uploads/.gitkeep
+*.mp4
+*.avi
+
+# --- Regenerable outputs ---
+exports/
+screenshots/
+qa_results/
+# NOTE: qa_reruns/ is intentionally NOT ignored — it holds the .rerun.log
+# evidence backing the "track_buffer 120->300 confirmed byte-identical"
+# finding in failure_log.md/bug_fixes.md. Keep it tracked.
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
