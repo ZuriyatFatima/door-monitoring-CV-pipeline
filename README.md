@@ -3,7 +3,7 @@
 Person tracking and IN/OUT counting for a door/passageway camera feed, with a
 separate door-open/closed classifier and a Streamlit dashboard.
 
-**Team C — VC Tech Internship** (Zuriyat Fatima, Kiran Farwa)
+**VC Tech Internship project** — Zuriyat Fatima
 
 ## What it does
 
@@ -39,13 +39,13 @@ pip install -r requirements.txt
 ```
 
 Model weights and video files are not committed to git (too large / regenerable).
-Obtain them from [team drive / describe source] and place them in:
+They are available on request. Place them in:
 - `models/` — detector and classifier weights (`yolo11n.pt`, `best.pt`)
 - `uploads/` — test videos (`test_1.mp4`, `landscape_test_1.mp4`, `landscape_test_2.mp4`)
 
-**Note**: `models/best.pt` is ~72MB — too large for a normal git commit. It's
-hosted at [team drive link] rather than tracked in git; if you need it version
-controlled, use Git LFS instead.
+**Note**: `models/best.pt` is ~72MB — too large for a normal git commit. It is
+not tracked in git (available on request); if you need it version controlled,
+use Git LFS instead.
 
 ## Running
 
